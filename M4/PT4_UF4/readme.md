@@ -40,3 +40,26 @@ Procederemos a cofigurar samba, el archivo que dejé en la carpeta de archivos e
 
 1. [SMB.CONF](https://github.com/TheKingoftheNetwork/SMX_VIB/blob/main/M4/PT4_UF4/ARCHIVOS/smb.conf)
 
+## AUTENTICAR EN KERBEROS
+Ahora que hemos configurado todo procedemos a autenticarnos en en nuestro dominio usando kerberos para ello
+
+```bash
+kinit <nombre_usuario>
+
+# klist muestra donde estamos autenticados
+sudo klist
+```
+## UNIRSE AL DOMINIO USANDO ADS
+Ahora nos uniremos al dominio usando net ads para ello usaremos el comando:
+
+```bash
+sudo net ads join -U <usuario>@<dominio>
+```
+> **⚠️ IMPORTANTE**: EL NOMBRE DE DOMINIO DEL EQUIPO LINUX HAY QUE CREARLO
+
+
+
+
+## WINBIND RESTART
+Ahora procederemos a reiniciar winbind
+

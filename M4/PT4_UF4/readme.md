@@ -58,8 +58,8 @@ Ahora nos uniremos al dominio usando net ads para ello usaremos el comando:
 ```bash
 sudo net ads join -U <usuario>@<dominio>
 ```
+> [!IMPORTANT]
 > **⚠️ IMPORTANTE**: EL NOMBRE DE DOMINIO DEL EQUIPO LINUX HAY QUE CREARLO
-
 ![image](https://github.com/TheKingoftheNetwork/SMX_VIB/blob/main/M4/PT4_UF4/ARCHIVOS/IM%C3%81GENES/DNS.png)
 
 

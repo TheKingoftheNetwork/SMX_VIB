@@ -2,7 +2,7 @@
 
 verificar_root() {
     if [ "$EUID" -ne 0 ]; then
-        echo "Este script debe ejecutarse como root. Por favor, ejecuta el script con privilegios de root."
+        echo "Ejecutalo como root porfavor."
         exit 1
     fi
 }

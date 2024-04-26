@@ -1,3 +1,6 @@
+> [!IMPORTANT]
+> HECHO POR JOSÉ DANIEL
+
 # INSTALACIÓN LINUX SERVER CON SAMBA Y UNIR A ACTIVE DIRECTORY
 
 Primeramente tendremos que tener instalado active directory en el Windows Server una vez hecho entonces podremos continuar con la instalación de todos los paquetes necesarios

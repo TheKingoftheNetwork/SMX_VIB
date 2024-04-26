@@ -64,3 +64,40 @@ sudo net ads join -U <usuario>@<dominio>
 ## WINBIND RESTART
 Ahora procederemos a reiniciar winbind
 
+```bash
+sudo /etc/init.d/winbind restart
+```
+
+## RECUPERAR LOS USUARIOS Y GRUPOS DEL DOMINIO AD
+
+Para recuperar los usuarios y grupos ejecutaremos los siguientes comandos
+
+```bash
+# Recupera los usuarios
+sudo wbinfo -u
+# Recupera los grupos
+sudo wbinfo -g
+```
+
+## CREACIÓN CARPETAS
+
+Procederemos a crear las carpetas y darles permisos:
+
+```bash
+sudo mkdir /home/alumnos
+sudo mkdir -p /home/alumnos/smx
+sudo mkdir -p /home/alumnos/daw
+    
+sudo chgrp <vuestro grupo> /home/alumnos/smx
+sudo chgrp <vuestro grupo> /home/alumnos/daw
+sudo chown root /home/alumnos/smx
+sudo chown root /home/alumnos/daw
+sudo chgrp "Usuarios del dominio" /home/alumnos
+```
+
+# ACTIVE DIRECTORY IMÁGENES
+Todas las capturas están en este directorio:
+
+- [IMÁGENES](https://github.com/TheKingoftheNetwork/SMX_VIB/tree/main/M4/PT4_UF4/ARCHIVOS/IM%C3%81GENES)
+
+

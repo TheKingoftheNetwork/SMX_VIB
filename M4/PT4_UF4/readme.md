@@ -26,3 +26,17 @@ DEBIAN_FRONTEND=noninteractive apt-get install -y samba krb5-user winbind libnss
 Ahora siguiendo el ejemplo que dejé en la carpeta archivos, rellenaremos según nuestros parámetros del dominio
 
 1. [KRB5.CONF](https://github.com/TheKingoftheNetwork/SMX_VIB/blob/main/M4/PT4_UF4/ARCHIVOS/krb5.conf)
+
+
+## CONFIGURACIÓN NSSWITCH.CONF
+
+Siguiendo el ejemplo que he proporcionado en la carpeta archivos añadiremos el valor winbind en las líneas group y passwd como se muestra en el archivo, dejo el enlace:
+
+1. [NSSWITCH.CONF](https://github.com/TheKingoftheNetwork/SMX_VIB/blob/main/M4/PT4_UF4/ARCHIVOS/nsswitch.conf)
+
+## CONFIGURACIÓN SAMBA
+
+Procederemos a cofigurar samba, el archivo que dejé en la carpeta de archivos es el que tenéis que poner para que todo funcione perfectamente.
+
+1. [SMB.CONF](https://github.com/TheKingoftheNetwork/SMX_VIB/blob/main/M4/PT4_UF4/ARCHIVOS/smb.conf)
+
